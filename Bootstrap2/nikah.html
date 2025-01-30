@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nikah Wedding</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="countdown/src/themes/dark.css" />
+
+    <link rel="stylesheet" href="nikah.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <div>
+        <h4>Kepada <span>Bapak/Ibu/saudara/i,</span></h4>
+        <h1>Jonathan & Erina</h1>
+        <p>Akan melangsungkan resepsi pernikahan dalam :</p>
+        <div id="countdown" class="simply-countdown-dark"></div>
+        <a href="#home" class="mb-4" onclick="enableScroll()">Lihat Undangan</a>
+      </div>
+    </section>
+
+    <nav
+      class="navbar navbar-expand-md bg-body-transparent sticky-top navbarGw"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">Nikah</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Nikah</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Story</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <a class="nav-link" href="#gift">Gifts</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Acara Pernikahan</h2>
+            <h3>
+              Diselenggarakan pada 2 Februari 2025 di Joestar Mansion,
+              Liverpool.
+            </h3>
+            <p>
+              Oleh karena itu dengan segala hormat, kami bermaksud untuk
+              mengundang Bapak/Ibu,Saudara/i, untuk hadir pada acara pernikahan
+              kami.
+            </p>
+          </div>
+        </div>
+
+        <div class="row couple">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-8 text-end">
+                <h3>Jonathan Joestar</h3>
+                <p>
+                  Jonathan adalah pria jujur, baik hati, dan lembut yang
+                  hidupnya penuh dengan tragedi setelah bertemu dengan kakak
+                  angkatnya, Dio Brando. Jonathan menjadi pengguna Hamon di
+                  bawah asuhan Will Anthonio Zeppeli.
+                </p>
+                <p>
+                  Putra dari George Joestar I <br />
+                  dan <br />
+                  Mary Joestar
+                </p>
+              </div>
+              <div class="col-4">
+                <img
+                  src="img/1.png"
+                  alt="Jonathan Joestar"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+            </div>
+          </div>
+
+          <span class="heart">
+            <i class="bi bi-heart-fill"></i>
+          </span>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-4">
+                <img
+                  src="img/2.png"
+                  alt="Jonathan Joestar"
+                  class="img-responsive rounded-circle"
+                />
+              </div>
+              <div class="col-8">
+                <h3>Erina Pandleton</h3>
+                <p>
+                  Erina adalah seorang gadis muda dari kampung halaman Jonathan
+                  Joestar, yang menjadi kekasihnya dan akhirnya menjadi istrinya
+                  (yang sekarang menjadikannya Erina Joestar)
+                </p>
+                <p>
+                  Putri dari Graham Pandleton <br />
+                  dan <br />
+                  Lorem Pandleton
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Informasi Acara</h2>
+            <p class="alamat">
+              Alamat : Joestar Mansion, Liverpool <br />
+              Dekat Port Town
+            </p>
+            <a
+              href="https://jojo.fandom.com/wiki/Joestar_Mansion"
+              class="btn btn-light btn-sm my-4"
+              target="_blank"
+              >Klik Untuk Membuka Peta</a
+            >
+            <p class="description">
+              Diharapkan untuk tidak salah alamat dan tanggal. Manakala tiba di
+              tujuan namun tidak ada tanda-tanda sedang dilangsungkan
+              pernikahan, boleh jadi Anda salah jadwal atau alamat, atau juga
+              Pengantinnya lagi naik kapal.
+            </p>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center mb-5">
+              <div class="card-header">Akad Nikah</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>08.00 - 10.00</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Minggu, 2 Februari 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat Acara Akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyuan seluruh prosesi.
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center">
+              <div class="card-header">Resepsi</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>11.00 - Selesai</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar3 d-block"></i>
+                    <span>Minggu, 2 Februari 2025</span>
+                  </div>
+                </div>
+              </div>
+              <div class="card-footer">
+                Saat Acara Akad diharapkan untuk kondusif menjaga kekhidmatan
+                dan kekhusyuan seluruh prosesi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Bagaimana Cinta Kami Bersemi</span>
+            <h2>Cerita Kami</h2>
+            <p>
+              Jonathan dan Erina bertemu saat kecil, ketika Jonathan
+              menyelamatkannya dari anak-anak yang mengganggunya. Mereka mulai
+              dekat dan jatuh cinta, tetapi hubungan mereka terganggu setelah
+              Dio mencuri ciuman pertama Erina. Erina kemudian meninggalkan
+              Inggris. Tujuh tahun kemudian, setelah Jonathan terluka parah
+              melawan Dio yang menjadi vampir, Erina merawatnya di rumah sakit,
+              dan mereka kembali bersama hingga Jonathan pulih.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div
+                  class="timeline-img"
+                  style="
+                    background-image: url(img/3526f01e7fa213b74c74412b48c768dc741bfd7d6659a0fd000a617e5ab8b4c9._SX1080_FMpng_.png);
+                  "
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Pertama Bertemu</h3>
+                    <span>Phantom Blood Eps. 1</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Jonathan dan Erina bertemu saat kecil ketika Jonathan
+                      menyelamatkannya dari anak-anak yang mengganggunya. Mereka
+                      bertemu lagi ketika Erina membawakan sekeranjang anggur
+                      sebagai ucapan terima kasih, dan keduanya jatuh cinta.
+                      Mereka menghabiskan waktu bersama, pergi ke pasar malam
+                      dan berenang, bahkan mengukir hati di pohon. Namun,
+                      kebahagiaan mereka terganggu ketika Dio mencuri ciuman
+                      pertama Erina, yang membuat hubungan mereka tegang. Tak
+                      lama setelah itu, Erina meninggalkan Inggris karena
+                      ayahnya dikirim ke India.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-img"
+                  style="
+                    background-image: url(img/ErinaCaughtbyJonathan.PNG.webp);
+                  "
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Bertemu kembali di Rumah Sakit</h3>
+                    <span>Phantom Blood Eps. 4</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Jonathan dan Erina bertemu lagi tujuh tahun kemudian,
+                      ketika Jonathan dibawa ke rumah sakit setelah terluka
+                      parah dalam pertarungannya melawan Dio yang kini menjadi
+                      vampir. Selama waktu itu, Erina menjadi perawat dan
+                      merawat luka bakar Jonathan, mengabaikan kesehatannya
+                      sendiri. Ketika Jonathan terbangun, ia langsung mengenali
+                      Erina, dan mereka tetap bersama hingga Jonathan pulih.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="timeline-img"
+                  style="background-image: url(img/Desain\ tanpa\ judul\(2\).png)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Menikah dan Bulan Madu</h3>
+                    <span>Phantom Blood Eps. 9</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Setelah Jonathan membunuh Dio, dia dan Erina akhirnya
+                      bersatu kembali dan menikah pada 2 Februari 1889, lalu
+                      pergi berbulan madu. Namun, Dio ternyata tidak mati dan
+                      membunuh Jonathan sebelum mereka sempat tiba. Sebelum
+                      meninggal, Jonathan mencium Erina untuk terakhir kalinya
+                      dan memintanya untuk menyelamatkan Lisa Lisa yang masih
+                      bayi, serta melarikan diri menggunakan peti mati Dio dari
+                      kapal yang tenggelam. Erina diselamatkan beberapa hari
+                      kemudian, dan kemudian mengungkapkan bahwa dia hamil.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Memori Kisah Kami</span>
+            <h2>Galeri Foto</h2>
+            <p>
+              Jonathan Joestar dan Erina Pendleton, dua jiwa yang dipersatukan
+              oleh cinta dan pengorbanan. Dari pertemuan masa kecil hingga
+              perjuangan terakhir mereka, kisah mereka adalah simbol cinta
+              sejati yang bertahan meski menghadapi bahaya dan kesulitan. Erina
+              tetap setia mendampingi Jonathan, menunjukkan bahwa cinta yang
+              tulus mampu mengatasi segala rintangan.
+            </p>
+          </div>
+        </div>
+        <div
+          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
+        >
+          <div class="col mt-3">
+            <a
+              href="img/gallery/AnyConv.com__E208koqWUAQjoQ4.jpg"
+              data-toggle="lightbox"
+              data-caption="Bulan Madu"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/gallery/thumbnail/Desain tanpa judul.png"
+                alt="JonaEri"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/Screenshot 2025-01-16 095729.png"
+              data-toggle="lightbox"
+              data-caption="Nikah"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/gallery/thumbnail/Desain tanpa judul (3).png"
+                alt="JonaEri"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/ErinaGrapes.PNG.webp"
+              data-toggle="lightbox"
+              data-caption="Erina ngasih anggur ke Jonathan"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/gallery/thumbnail/3.png"
+                alt="JonaEri"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/Zeppeli_meet_jojo.webp"
+              data-toggle="lightbox"
+              data-caption="Erina sma Jonathan ketemu Zeppeli"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/gallery/thumbnail/4.png"
+                alt="JonaEri"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/Injuredjonatahn.webp"
+              data-toggle="lightbox"
+              data-caption="Erina dan Jonathan di Rumah Sakit"
+              data-gallery="mygallery"
+            >
+              <img
+                src="img/gallery/thumbnail/5.png"
+                alt="JonaEri"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Konfirmasi Kehadiran</h2>
+            <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+          </div>
+        </div>
+        <form
+          id="my-form"
+          class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbyEwxeL6R4MzlYWljvqbiZhEzz0bcVOqM0F6i4cvwiGG1t7PmgFobDaHGZap5LGOvZQ/exec"
+        >
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" name="nama" />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="jumlah" class="form-label">Jumlah</label>
+              <input
+                type="number"
+                class="form-control"
+                id="jumlah"
+                name="jumlah"
+                min="1"
+                max="7"
+                lenght="1"
+                value="1"
+              />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Konfirmasi</label>
+              <select name="status" id="status" class="form-select">
+                <option selected>Pilih Salah Satu</option>
+                <option value="Hadir">Hadir</option>
+                <option value="Tidak Hadir">Tidak Hadir</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12" style="margin-top: 35px">
+            <button class="btn btn-primary">Kirim</button>
+          </div>
+        </form>
+        <div class="row justify-content-center mt-5">
+          <div class="col-md-12">
+            <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://nikah-wedding.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gift" class="gift">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Ungkapan Tanda Kasih</span>
+            <h2>Kirim Hadiah</h2>
+            <p>Yang ngirim bisa punya Stand dan dapet Hamon😈</p>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-6">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="fw-bold">BJF</div>
+                1234567890 - JONATHAN JOESTAR
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">JoJoBank</div>
+                0987654321 - JONATHAN JOESTAR
+              </li>
+              <li class="list-group-item">
+                <div class="fw-bold">Jo-Money</div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Eveniet, qui! Voluptate, id quia culpa quis mollitia sed
+                nesciunt eum excepturi reprehenderit, similique eligendi quo.
+                Animi aliquam optio et ipsam repellat!
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <small class="block">&copy; 2025 JoRina Wedding. All Rights Reserved</small>
+            <small class="block">Design by <a href="https://www.instagram.com/i77.o13/">@i77.o13</a></small>
+            <ul class="mt-3">
+              <li>
+                <a href="https://www.instagram.com/i77.o13/"><i class="bi bi-instagram"></i></a>
+              </li>
+              <li>
+                <a href="https://x.com/Ju5tS0m3Th1ng"><i class="bi bi-twitter-x"></i></a>
+              </li>
+              <li>
+                <a href="https://open.spotify.com/user/31ln5lwx5nlfrtsypwjjooao77gi"><i class="bi bi-spotify"></i></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@someonetomeetyou"><i class="bi bi-youtube"></i></i></a>
+              </li>
+              <li>
+                <a href="https://translate.google.com/"><i class="bi bi-translate"></i></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="audio-container">
+      <audio id="bgm" autoplay loop>
+        <source src="audio/JoJo's Bizarre Adventure Phantom Blood- The Tale of Their LoveJonathan and Erina theme.mp3" type="audio/mp3">
+      </audio>
+      <div class="audio-icon-wrapper" style="display: none;">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <script src="countdown/dist/simplyCountdown.js"></script>
+    <script src="countdown/dist/simplyCountdown.umd.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+    <script>
+      simplyCountdown("#countdown", {
+        year: 2025,
+        month: 2,
+        day: 2,
+      });
+    </script>
+    <script>
+      const stickyTop = document.querySelector(".sticky-top");
+      const offcanvas = document.querySelector(".offcanvas");
+
+      offcanvas.addEventListener("show.bs.offcanvas", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offcanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
+      });
+    </script>
+    <script>
+        const audioIconWrapper = document.querySelector('.audio-icon-wrapper')
+        const bgm = document.querySelector('#bgm')
+        const audioIcon = document.querySelector('.audio-icon-wrapper i')
+        let isPlaying = false
+
+      function disableScroll() {
+        const scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        const scrollLeft =
+          window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        const rootElement = document.querySelector(":root");
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        const rootElement = document.querySelector(":root");
+        rootElement.style.scrollBehavior = "smooth";
+        // localStorage.setItem("opened", "true");
+        playAudio()
+      }
+
+      function playAudio(){
+        bgm.volume = 1
+        audioIconWrapper.style.display = 'flex'
+        bgm.play()
+        isPlaying = true
+      }
+
+      audioIconWrapper.onclick = function(){
+        if(isPlaying){
+          bgm.pause()
+          audioIcon.classList.remove('bi-disc')
+          audioIcon.classList.add('bi-pause-circle')
+        } else{
+          bgm.play()
+          audioIcon.classList.add('bi-disc')
+          audioIcon.classList.remove('bi-pause-circle')
+        }
+
+        isPlaying = !isPlaying
+      }
+
+      // if (!localStorage.getItem("opened")) {
+            disableScroll();
+      // }
+    </script>
+    <script>
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          const data = new FormData(form);
+          const action = e.target.action;
+          fetch(action, {
+            method: "POST",
+            body: data,
+          }).then(() => {
+            alert("Konfirmasi Kehadiran Berhasil Terkirim!");
+          });
+        });
+      });
+    </script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const n = urlParams.get('n') || '';
+      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i'
+      console.log(n);
+
+      const namaContainer = document.querySelector('.hero h4 span');
+      namaContainer.innerText = `${pronoun} ${n},`.replace(/ ,$/, ',');
+
+      document.querySelector('#nama').value = n;
+    </script>
+  </body>
+</html>
